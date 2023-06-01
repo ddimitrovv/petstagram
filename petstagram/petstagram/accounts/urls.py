@@ -5,9 +5,9 @@ from petstagram.pets.views import register, login, profile_details, profile_edit
 urlpatterns = (
     path('register/', register, name='register'),
     path('login/', login, name='login'),
-    path('profile/<int:pk>/', include((
-        path('', profile_details, name='profile details'),
-        path('edit/', profile_edit, name='profile edit'),
-        path('delete/', profile_delete, name='profile delete'),
-    ))),
+    path('account/<int:pk>/', include([
+        path('', profile_details, name='accounts details'),
+        path('edit/', profile_edit, name='accounts edit'),
+        path('delete/', profile_delete, name='accounts delete'),
+    ])),
 )

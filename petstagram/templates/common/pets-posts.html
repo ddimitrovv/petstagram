@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="pet-profile">
+        <div class="profile">
+            <div class="profile-data">
+                <div class="profile_img">
+                    <div class="image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgoIHq82qLYnvomfz5ZkW5CLQ8VNxCyI-hUw&usqp=CAU"
+                             alt="img8">
+                    </div>
+                </div>
+                <div class="personal">
+                    <div class="edit">
+                        <p>Sasho</p>
+                        <a href="">
+                            <img class="edit-img" src="/static/images/edit-pen-icon-6.jpg" alt="edit button">
+                        </a>
+                        <a href="">
+                            <img class="bin-img" src="/static/images/icon-remove-22.jpg" alt="bin button">
+                        </a>
+                    </div>
+                    <div class="data">
+                        <span>4</span>
+                        <p>photos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pet-posts">
+            <!-- Start if pet photos -->
+
+            <!-- End if pet photos -->
+
+            <!-- Start if not pet photos -->
+            <img class="no-posts" src="/static/images/no_posts.png" alt="no posts image">
+            <!-- End if not pet photos -->
+        </div>
+    </div>
+
+{% endblock %}
